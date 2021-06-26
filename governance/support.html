@@ -4,7 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <!-- Licensed under the Apache 2.0 License -->
   <link rel="stylesheet" type="text/css" href="../_static/fonts/open-sans/stylesheet.css" />
@@ -15,16 +15,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
     <title>Support &#8212; CGNS Official Web Site</title>
-    <link rel="stylesheet" href="../_static/guzzle.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/guzzle.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/css/filemap.css" />
     <link rel="stylesheet" type="text/css" href="../_static/css/math_override.css" />
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/language_data.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="shortcut icon" href="../_static/CGNS_empty.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -79,18 +77,16 @@
 <li><a class="reference internal" href="#web-resources">Web resources</a></li>
 <li><a class="reference internal" href="#development-support">Development support</a><ul>
 <li><a class="reference internal" href="#building-libraries-and-tools">Building libraries and tools</a></li>
-<li><a class="reference internal" href="#building-the-documentation">Building the documentation</a></li>
-<li><a class="reference internal" href="#documentation-editing">Documentation editing</a><ul>
-<li><a class="reference internal" href="#header">header</a></li>
-<li><a class="reference internal" href="#internal-link">Internal link</a></li>
-<li><a class="reference internal" href="#external-link">External link</a></li>
-<li><a class="reference internal" href="#block-quote">Block quote</a></li>
-<li><a class="reference internal" href="#simple-table">Simple Table</a></li>
-<li><a class="reference internal" href="#admonition">Admonition</a></li>
-<li><a class="reference internal" href="#image">Image</a></li>
-<li><a class="reference internal" href="#citation">Citation</a></li>
+<li><a class="reference internal" href="#building-the-documentation">Building the documentation</a><ul>
+<li><a class="reference internal" href="#step-0">## STEP 0</a></li>
+<li><a class="reference internal" href="#step-1">## STEP 1</a></li>
+<li><a class="reference internal" href="#step-2">## STEP 2</a></li>
+<li><a class="reference internal" href="#step-3">## STEP 3</a></li>
+<li><a class="reference internal" href="#step-4">## STEP 4</a></li>
+<li><a class="reference internal" href="#step-5">## STEP 5</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#documentation-editing">Documentation editing</a></li>
 <li><a class="reference internal" href="#cpex-guidelines">CPEX guidelines</a></li>
 </ul>
 </li>
@@ -157,7 +153,9 @@ can be found on <a class="reference external" href="http://www.github.com/CGNS/C
 the web pages from these text files and a set of layout templates.
 The template we use for CGNS is a modified version of the <strong>Guzzle</strong> template.
 This modified version is released with the doc sources.</p>
-<p>First, you have to install the production libs and tools, you have to
+<div class="section" id="step-0">
+<h4>## STEP 0<a class="headerlink" href="#step-0" title="Permalink to this headline">¶</a></h4>
+<p>You have to install the production libs and tools, you have to
 make available:</p>
 <blockquote>
 <div><ul class="simple">
@@ -166,8 +164,45 @@ make available:</p>
 <li><p>guzzle sphinx theme</p></li>
 </ul>
 </div></blockquote>
-<p>Jump to the glossary to get more info about <a class="reference internal" href="../general/glossary.html#term-Python"><span class="xref std std-term">Python</span></a> and <a class="reference internal" href="../general/glossary.html#term-Sphinx"><span class="xref std std-term">Sphinx</span></a>.
-The <em>guzzle</em> theme can be found in the CGNS doc sources.
+<p>To check your production configuration,
+open an Unix shell, for example <strong>bash</strong> and run the commands
+(do not type the <cite>$</cite> sign which is supposed to be the shell prompt:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ python
+Python <span class="m">3</span>.9.1 <span class="o">(</span>default, Feb  <span class="m">8</span> <span class="m">2021</span>, <span class="m">12</span>:46:16<span class="o">)</span>
+<span class="o">[</span>GCC <span class="m">4</span>.8.5 <span class="m">20150623</span> <span class="o">(</span>Red Hat <span class="m">4</span>.8.5-16<span class="o">)]</span> on linux
+Type <span class="s2">&quot;help&quot;</span>, <span class="s2">&quot;copyright&quot;</span>, <span class="s2">&quot;credits&quot;</span> or <span class="s2">&quot;license&quot;</span> <span class="k">for</span> more information.
+&gt;&gt;&gt;
+</pre></div>
+</div>
+<p>If the python version is not 3.x.y or if you do not have python, you
+have to install it. On some systems, you would have to type <cite>python3</cite>
+to run python instead of only <cite>python</cite> without version number.</p>
+<p>Once python 3.x.y is there, go to <strong>STEP 2</strong>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Now your python version is 3.x.y and you have to use the <strong>3.x</strong>
+version in all path we mention in next steps. The example are using <strong>3.7</strong>
+and you <strong>should</strong> change these path with your own <strong>3.x</strong> to make it
+work properly.</p>
+</div>
+</div>
+<div class="section" id="step-1">
+<h4>## STEP 1<a class="headerlink" href="#step-1" title="Permalink to this headline">¶</a></h4>
+<p>The <cite>&gt;&gt;&gt;</cite> sign is the python interpreter prompt. We resume our test by
+trying to find out if our python installation has all required packages:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">sphinx</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">guzzle_sphinx_theme</span>
+</pre></div>
+</div>
+<p>If the command fails on <cite>import sphinx</cite>, you can install it using
+the shell command (<strong>not</strong> a python command):</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ pip install sphinx
+</pre></div>
+</div>
+<p>If the command fails on the <cite>import guzzle_sphinx_theme</cite> you have to
+install the guzzle package.
+The <em>guzzle</em> theme can be found in the CGNS doc sources, you find the package
+in &lt;clone-directory&gt;/
 You can find below an example installation of <em>guzzle</em> you have to modify
 to fit your own environment.</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>mkdir /tmp/gz
@@ -188,6 +223,59 @@ For example, on a Unix platform with a <em>sh</em> shell:</p>
 unzip guzzle_sphinx_theme-0.7.11-py3.7.egg
 </pre></div>
 </div>
+<p>If you still have an error in <a href="#id2"><span class="problematic" id="id3">`</span></a>import guzzle_sphinx_theme’ you can move
+the pacge this way:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> /tmp/gz/install/lib/python3.7/site-packages
+mv guzzle_sphinx_theme-0.7.11-py3.7.egg/guzzle_sphix_theme .
+</pre></div>
+</div>
+<p>Try again this <strong>STEP 1</strong> if succeed, you jump to <strong>STEP 2</strong></p>
+</div>
+<div class="section" id="step-2">
+<h4>## STEP 2<a class="headerlink" href="#step-2" title="Permalink to this headline">¶</a></h4>
+<p>Congrats! you are now ready to contribute to the CGNS documentation.
+We retrieve the last version from the <em>git</em> repository.
+Go to the directory where you want to produce the documentation,
+say for example: <code class="docutils literal notranslate"><span class="pre">/my/own/local/doc/directory</span></code></p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> /my/own/local/doc/directory
+git clone https://github.com/CGNS/cgns.github.io.git
+git checkout doc-rest-migration
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You need to have <strong>git</strong> to get the actual documentation source tree.
+We cannot detail here how to install git or how to allow it to access to
+the CGNS repository. If you really are lost, please use CGNS mailing list.</p>
+</div>
+</div>
+<div class="section" id="step-3">
+<h4>## STEP 3<a class="headerlink" href="#step-3" title="Permalink to this headline">¶</a></h4>
+<p>Everything is ready now, once you are in <code class="docutils literal notranslate"><span class="pre">/my/own/local/doc/directory</span></code>
+all sources are into:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CGNS</span><span class="o">-</span><span class="n">ReST</span><span class="o">-</span><span class="n">site</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If this directory is not there, be sure you are on the <em>doc-rest-migration</em>
+branch.</p>
+</div>
+<p>To produce the documentation, you run:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">CGNS</span><span class="o">-</span><span class="n">ReST</span><span class="o">-</span><span class="n">site</span>
+<span class="n">sh</span> <span class="o">./</span><span class="n">build</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+<p>All doc is generated into:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">my</span><span class="o">/</span><span class="n">own</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">doc</span><span class="o">/</span><span class="n">directory</span><span class="o">/</span><span class="n">cgns</span><span class="o">-</span><span class="n">test</span><span class="o">.</span><span class="n">github</span><span class="o">.</span><span class="n">io</span>
+</pre></div>
+</div>
+<p>To check the produced documentation, you open a web browser (<em>chrome</em>,
+<em>firefox</em>, whatever…) and you open the top page which is <code class="docutils literal notranslate"><span class="pre">index.html</span></code>
+(in this example we are still in the  <code class="docutils literal notranslate"><span class="pre">CGNS-ReST-site</span></code>):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">firefox</span> <span class="o">../../</span><span class="n">cgns</span><span class="o">-</span><span class="n">test</span><span class="o">.</span><span class="n">github</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">index</span><span class="o">.</span><span class="n">html</span>
+</pre></div>
+</div>
 <p>Second you run the <cite>build.sh</cite> script, it generates all the stuff and
 copies a final/ usable html directory with all required files.
 You can copy this directory at any place you want, the directory is
@@ -196,11 +284,30 @@ self-contained.</p>
 so that you may have issues with the equations if you are not connected
 to the public internet.</p>
 </div>
+<div class="section" id="step-4">
+<h4>## STEP 4<a class="headerlink" href="#step-4" title="Permalink to this headline">¶</a></h4>
+<p>Now you open your favorite text editor. You follow the documentation
+editing recommendations described hereafter and you loop on steps 3 and 4.</p>
+</div>
+<div class="section" id="step-5">
+<h4>## STEP 5<a class="headerlink" href="#step-5" title="Permalink to this headline">¶</a></h4>
+<p>You are done with your editing. You commit your changes with a nice
+comment and you push it to the repository:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">add</span> <span class="o">-</span><span class="n">A</span>
+<span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s1">&#39;update section 4.2.1&#39;</span>
+<span class="n">git</span> <span class="n">push</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If some modifications have been applied since you where editing, you have to
+perform a merge by yourself after a <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code></p>
+</div>
+</div>
+</div>
 <div class="section" id="documentation-editing">
 <h3>Documentation editing<a class="headerlink" href="#documentation-editing" title="Permalink to this headline">¶</a></h3>
 <p>Doc Conventions for these CGNS web pages</p>
-<div class="section" id="header">
-<h4>header<a class="headerlink" href="#header" title="Permalink to this headline">¶</a></h4>
 <div class="highlight-rest notranslate"><div class="highlight"><pre><span></span><span class="gh">Top level header</span>
 <span class="gh">================</span>
 
@@ -237,9 +344,6 @@ is not provided, and flow solvers are free to enforce any
 appropriate boundary condition equations.
 </pre></div>
 </div>
-</div>
-<div class="section" id="internal-link">
-<h4>Internal link<a class="headerlink" href="#internal-link" title="Permalink to this headline">¶</a></h4>
 <p>An internal link is composed of its <em>anchor</em> (the place in the web site
 where you want to go to) and a <em>reference</em> (the words wich triggers
 the jump to the anchor).</p>
@@ -255,17 +359,11 @@ can also <span class="na">:ref:</span><span class="nv">`click on to jump elsewhe
 </pre></div>
 </div>
 <p>The anchor in into angular brackets, the clickable text is user defined.</p>
-</div>
-<div class="section" id="external-link">
-<h4>External link<a class="headerlink" href="#external-link" title="Permalink to this headline">¶</a></h4>
 <p>For an external reference the syntax is:</p>
 <div class="highlight-rest notranslate"><div class="highlight"><pre><span></span>Info can be found on <span class="s">`other site web page </span><span class="si">&lt; URL to other site page &gt;</span><span class="s">`_</span>.
 </pre></div>
 </div>
 <p>Do not miss the trailing underscore.</p>
-</div>
-<div class="section" id="block-quote">
-<h4>Block quote<a class="headerlink" href="#block-quote" title="Permalink to this headline">¶</a></h4>
 <p>To add a quote in the text, inside a box (this is the default style
 of our template), shift the text block on the right:</p>
 <div class="highlight-rest notranslate"><div class="highlight"><pre><span></span>Generating documentation from source code is possible.
@@ -280,9 +378,6 @@ of our template), shift the text block on the right:</p>
 <div><p>But code does not explain by itself</p>
 <p class="attribution">—C compiler (stdout)</p>
 </div></blockquote>
-</div>
-<div class="section" id="simple-table">
-<h4>Simple Table<a class="headerlink" href="#simple-table" title="Permalink to this headline">¶</a></h4>
 <table class="table-bordered docutils align-default">
 <colgroup>
 <col style="width: 30%" />
@@ -326,9 +421,6 @@ Epsilon</div>
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="admonition">
-<h4>Admonition<a class="headerlink" href="#admonition" title="Permalink to this headline">¶</a></h4>
 <p>A set of special blocks are called <em>admonitions</em>. These includes notes,
 warnings… their layout, again, is set by the style we use.</p>
 <div class="highlight-rest notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">note</span><span class="p">::</span>
@@ -356,9 +448,6 @@ warnings… their layout, again, is set by the style we use.</p>
 <p class="admonition-title">Tip</p>
 <p>start from first page</p>
 </div>
-</div>
-<div class="section" id="image">
-<h4>Image<a class="headerlink" href="#image" title="Permalink to this headline">¶</a></h4>
 <p>There are several ways to insert an image.
 The first example adds an image as a new paragraph:</p>
 <div class="highlight-rest notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">image</span><span class="p">::</span> ../path/to/image/file.png
@@ -394,9 +483,6 @@ an image path should have three backwards items, <code class="docutils literal n
 related to <code class="docutils literal notranslate"><span class="pre">source/standard/SIDS</span></code>.</p>
 <p>Your image in this file has the path: <code class="docutils literal notranslate"><span class="pre">../../../images/sids/figs/bar_2.png</span></code></p>
 </div>
-</div>
-<div class="section" id="citation">
-<h4>Citation<a class="headerlink" href="#citation" title="Permalink to this headline">¶</a></h4>
 <p>Inserting footnotes, citation or any reference can be defined in
 several ways:</p>
 <div class="highlight-rest notranslate"><div class="highlight"><pre><span></span>In the text you can add references such as <span class="s">[2]_</span>, <span class="s">[1]_</span>, <span class="s">[CIT2002]_</span>.
@@ -410,23 +496,22 @@ several ways:</p>
    textual.
 </pre></div>
 </div>
-<p>In the text you can add references such as <a class="footnote-reference brackets" href="#id5" id="id2">2</a>, <a class="footnote-reference brackets" href="#id6" id="id3">1</a>, <a class="reference internal" href="#cit2002" id="id4"><span>[CIT2002]</span></a>.</p>
+<p>In the text you can add references such as <a class="footnote-reference brackets" href="#id7" id="id4">2</a>, <a class="footnote-reference brackets" href="#id8" id="id5">1</a>, <a class="reference internal" href="#cit2002" id="id6"><span>[CIT2002]</span></a>.</p>
 <dl class="footnote brackets">
-<dt class="label" id="id5"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
+<dt class="label" id="id7"><span class="brackets"><a class="fn-backref" href="#id4">2</a></span></dt>
 <dd><p>In the footnote.</p>
 </dd>
-<dt class="label" id="id6"><span class="brackets"><a class="fn-backref" href="#id3">1</a></span></dt>
+<dt class="label" id="id8"><span class="brackets"><a class="fn-backref" href="#id5">1</a></span></dt>
 <dd><p>A footnote contains body elements, consistently
 indented by at least 3 spaces.</p>
 </dd>
 </dl>
 <dl class="citation">
-<dt class="label" id="cit2002"><span class="brackets"><a class="fn-backref" href="#id4">CIT2002</a></span></dt>
+<dt class="label" id="cit2002"><span class="brackets"><a class="fn-backref" href="#id6">CIT2002</a></span></dt>
 <dd><p>Just like a footnote, except the label is
 textual.</p>
 </dd>
 </dl>
-</div>
 </div>
 <div class="section" id="cpex-guidelines">
 <span id="cpexguidelines"></span><h3>CPEX guidelines<a class="headerlink" href="#cpex-guidelines" title="Permalink to this headline">¶</a></h3>

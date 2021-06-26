@@ -4,7 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <!-- Licensed under the Apache 2.0 License -->
   <link rel="stylesheet" type="text/css" href="../../_static/fonts/open-sans/stylesheet.css" />
@@ -15,16 +15,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
     <title>Node Management Routines &#8212; CGNS Official Web Site</title>
-    <link rel="stylesheet" href="../../_static/guzzle.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/guzzle.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/filemap.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/math_override.css" />
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/language_data.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="shortcut icon" href="../../_static/CGNS_empty.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -122,14 +120,14 @@
 <dt class="field-odd">C Signature</dt>
 <dd class="field-odd"><dl class="c function">
 <dt id="c.cgio_get_node_id">
-int <code class="sig-name descname">cgio_get_node_id</code><span class="sig-paren">(</span>int <em>cgio_num</em>, double <em>pid</em>, <em class="property">const</em> char *<em>pathname</em>, double *<em>id</em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_get_node_id" title="Permalink to this definition">¶</a><br /></dt>
+<span class="pre">int</span> <code class="sig-name descname"><span class="pre">cgio_get_node_id</span></code><span class="sig-paren">(</span><span class="pre">int</span> <em><span class="pre">cgio_num</span></em>, <span class="pre">double</span> <em><span class="pre">pid</span></em>, <em class="property"><span class="pre">const</span></em> <span class="pre">char</span> <span class="pre">*</span><em><span class="pre">pathname</span></em>, <span class="pre">double</span> <span class="pre">*</span><em><span class="pre">id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_get_node_id" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </dd>
 <dt class="field-even">Fortran Signature</dt>
 <dd class="field-even"><dl class="subroutine">
 <dt id="f/_/cgio_get_node_id_f">
-<em class="property">subroutine  </em><code class="sig-name descname">cgio_get_node_id_f</code><span class="sig-paren">(</span><em class="sig-param">cgio_num</em>, <em class="sig-param">pid</em>, <em class="sig-param">pathname</em>, <em class="sig-param">id</em>, <em class="sig-param">ier</em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_get_node_id_f" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">subroutine</span>&#160; </em><code class="sig-name descname"><span class="pre">cgio_get_node_id_f</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">cgio_num</span></em>, <em class="sig-param"><span class="pre">pid</span></em>, <em class="sig-param"><span class="pre">pathname</span></em>, <em class="sig-param"><span class="pre">id</span></em>, <em class="sig-param"><span class="pre">ier</span></em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_get_node_id_f" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd>
@@ -175,14 +173,14 @@ The function returns 0 and the node identifier in <code class="code docutils lit
 <dt class="field-odd">C Signature</dt>
 <dd class="field-odd"><dl class="c function">
 <dt id="c.cgio_get_name">
-int <code class="sig-name descname">cgio_get_name</code><span class="sig-paren">(</span>int <em>cgio_num</em>, double <em>id</em>, char *<em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_get_name" title="Permalink to this definition">¶</a><br /></dt>
+<span class="pre">int</span> <code class="sig-name descname"><span class="pre">cgio_get_name</span></code><span class="sig-paren">(</span><span class="pre">int</span> <em><span class="pre">cgio_num</span></em>, <span class="pre">double</span> <em><span class="pre">id</span></em>, <span class="pre">char</span> <span class="pre">*</span><em><span class="pre">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_get_name" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </dd>
 <dt class="field-even">Fortran Signature</dt>
 <dd class="field-even"><dl class="subroutine">
 <dt id="f/_/cgio_get_name_f">
-<em class="property">subroutine  </em><code class="sig-name descname">cgio_get_name_f</code><span class="sig-paren">(</span><em class="sig-param">cgio_num</em>, <em class="sig-param">id</em>, <em class="sig-param">name</em>, <em class="sig-param">ier</em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_get_name_f" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">subroutine</span>&#160; </em><code class="sig-name descname"><span class="pre">cgio_get_name_f</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">cgio_num</span></em>, <em class="sig-param"><span class="pre">id</span></em>, <em class="sig-param"><span class="pre">name</span></em>, <em class="sig-param"><span class="pre">ier</span></em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_get_name_f" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd>
@@ -225,14 +223,14 @@ The function returns 0 for success, else an error code.</p>
 <dt class="field-odd">C Signature</dt>
 <dd class="field-odd"><dl class="c function">
 <dt id="c.cgio_set_name">
-int <code class="sig-name descname">cgio_set_name</code><span class="sig-paren">(</span>int <em>cgio_num</em>, double <em>pid</em>, double <em>id</em>, <em class="property">const</em> char *<em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_set_name" title="Permalink to this definition">¶</a><br /></dt>
+<span class="pre">int</span> <code class="sig-name descname"><span class="pre">cgio_set_name</span></code><span class="sig-paren">(</span><span class="pre">int</span> <em><span class="pre">cgio_num</span></em>, <span class="pre">double</span> <em><span class="pre">pid</span></em>, <span class="pre">double</span> <em><span class="pre">id</span></em>, <em class="property"><span class="pre">const</span></em> <span class="pre">char</span> <span class="pre">*</span><em><span class="pre">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_set_name" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </dd>
 <dt class="field-even">Fortran Signature</dt>
 <dd class="field-even"><dl class="subroutine">
 <dt id="f/_/cgio_set_name_f">
-<em class="property">subroutine  </em><code class="sig-name descname">cgio_set_name_f</code><span class="sig-paren">(</span><em class="sig-param">cgio_num</em>, <em class="sig-param">pid</em>, <em class="sig-param">id</em>, <em class="sig-param">name</em>, <em class="sig-param">ier</em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_set_name_f" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">subroutine</span>&#160; </em><code class="sig-name descname"><span class="pre">cgio_set_name_f</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">cgio_num</span></em>, <em class="sig-param"><span class="pre">pid</span></em>, <em class="sig-param"><span class="pre">id</span></em>, <em class="sig-param"><span class="pre">name</span></em>, <em class="sig-param"><span class="pre">ier</span></em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_set_name_f" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd>
@@ -276,14 +274,14 @@ The parent node identifier is given by <code class="code docutils literal notran
 <dt class="field-odd">C Signature</dt>
 <dd class="field-odd"><dl class="c function">
 <dt id="c.cgio_get_label">
-int <code class="sig-name descname">cgio_get_label</code><span class="sig-paren">(</span>int <em>cgio_num</em>, double <em>id</em>, char *<em>label</em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_get_label" title="Permalink to this definition">¶</a><br /></dt>
+<span class="pre">int</span> <code class="sig-name descname"><span class="pre">cgio_get_label</span></code><span class="sig-paren">(</span><span class="pre">int</span> <em><span class="pre">cgio_num</span></em>, <span class="pre">double</span> <em><span class="pre">id</span></em>, <span class="pre">char</span> <span class="pre">*</span><em><span class="pre">label</span></em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_get_label" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </dd>
 <dt class="field-even">Fortran Signature</dt>
 <dd class="field-even"><dl class="subroutine">
 <dt id="f/_/cgio_get_label_f">
-<em class="property">subroutine  </em><code class="sig-name descname">cgio_get_label_f</code><span class="sig-paren">(</span><em class="sig-param">cgio_num</em>, <em class="sig-param">id</em>, <em class="sig-param">label</em>, <em class="sig-param">ier</em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_get_label_f" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">subroutine</span>&#160; </em><code class="sig-name descname"><span class="pre">cgio_get_label_f</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">cgio_num</span></em>, <em class="sig-param"><span class="pre">id</span></em>, <em class="sig-param"><span class="pre">label</span></em>, <em class="sig-param"><span class="pre">ier</span></em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_get_label_f" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd>
@@ -323,14 +321,14 @@ int <code class="sig-name descname">cgio_get_label</code><span class="sig-paren"
 <dt class="field-odd">C Signature</dt>
 <dd class="field-odd"><dl class="c function">
 <dt id="c.cgio_set_label">
-int <code class="sig-name descname">cgio_set_label</code><span class="sig-paren">(</span>int <em>cgio_num</em>, double <em>id</em>, <em class="property">const</em> char *<em>label</em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_set_label" title="Permalink to this definition">¶</a><br /></dt>
+<span class="pre">int</span> <code class="sig-name descname"><span class="pre">cgio_set_label</span></code><span class="sig-paren">(</span><span class="pre">int</span> <em><span class="pre">cgio_num</span></em>, <span class="pre">double</span> <em><span class="pre">id</span></em>, <em class="property"><span class="pre">const</span></em> <span class="pre">char</span> <span class="pre">*</span><em><span class="pre">label</span></em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_set_label" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </dd>
 <dt class="field-even">Fortran Signature</dt>
 <dd class="field-even"><dl class="subroutine">
 <dt id="f/_/cgio_set_label_f">
-<em class="property">subroutine  </em><code class="sig-name descname">cgio_set_label_f</code><span class="sig-paren">(</span><em class="sig-param">cgio_num</em>, <em class="sig-param">id</em>, <em class="sig-param">label</em>, <em class="sig-param">ier</em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_set_label_f" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">subroutine</span>&#160; </em><code class="sig-name descname"><span class="pre">cgio_set_label_f</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">cgio_num</span></em>, <em class="sig-param"><span class="pre">id</span></em>, <em class="sig-param"><span class="pre">label</span></em>, <em class="sig-param"><span class="pre">ier</span></em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_set_label_f" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd>
@@ -371,14 +369,14 @@ The function return 0 on success, else an error code.</p>
 <dt class="field-odd">C Signature</dt>
 <dd class="field-odd"><dl class="c function">
 <dt id="c.cgio_get_data_type">
-int <code class="sig-name descname">cgio_get_data_type</code><span class="sig-paren">(</span>int <em>cgio_num</em>, double <em>id</em>, char *<em>data_type</em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_get_data_type" title="Permalink to this definition">¶</a><br /></dt>
+<span class="pre">int</span> <code class="sig-name descname"><span class="pre">cgio_get_data_type</span></code><span class="sig-paren">(</span><span class="pre">int</span> <em><span class="pre">cgio_num</span></em>, <span class="pre">double</span> <em><span class="pre">id</span></em>, <span class="pre">char</span> <span class="pre">*</span><em><span class="pre">data_type</span></em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_get_data_type" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </dd>
 <dt class="field-even">Fortran Signature</dt>
 <dd class="field-even"><dl class="subroutine">
 <dt id="f/_/cgio_get_data_type_f">
-<em class="property">subroutine  </em><code class="sig-name descname">cgio_get_data_type_f</code><span class="sig-paren">(</span><em class="sig-param">cgio_num</em>, <em class="sig-param">id</em>, <em class="sig-param">data_type</em>, <em class="sig-param">ier</em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_get_data_type_f" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">subroutine</span>&#160; </em><code class="sig-name descname"><span class="pre">cgio_get_data_type_f</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">cgio_num</span></em>, <em class="sig-param"><span class="pre">id</span></em>, <em class="sig-param"><span class="pre">data_type</span></em>, <em class="sig-param"><span class="pre">ier</span></em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_get_data_type_f" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd>
@@ -421,14 +419,14 @@ The function returns 0 for success, else an error code.</p>
 <dt class="field-odd">C Signature</dt>
 <dd class="field-odd"><dl class="c function">
 <dt id="c.cgio_get_dimensions">
-int <code class="sig-name descname">cgio_get_dimensions</code><span class="sig-paren">(</span>int <em>cgio_num</em>, double <em>id</em>, int *<em>ndims</em>, cgsize_t *<em>dims</em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_get_dimensions" title="Permalink to this definition">¶</a><br /></dt>
+<span class="pre">int</span> <code class="sig-name descname"><span class="pre">cgio_get_dimensions</span></code><span class="sig-paren">(</span><span class="pre">int</span> <em><span class="pre">cgio_num</span></em>, <span class="pre">double</span> <em><span class="pre">id</span></em>, <span class="pre">int</span> <span class="pre">*</span><em><span class="pre">ndims</span></em>, <span class="pre">cgsize_t</span> <span class="pre">*</span><em><span class="pre">dims</span></em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_get_dimensions" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </dd>
 <dt class="field-even">Fortran Signature</dt>
 <dd class="field-even"><dl class="subroutine">
 <dt id="f/_/cgio_get_dimensions_f">
-<em class="property">subroutine  </em><code class="sig-name descname">cgio_get_dimensions_f</code><span class="sig-paren">(</span><em class="sig-param">cgio_num</em>, <em class="sig-param">id</em>, <em class="sig-param">ndims</em>, <em class="sig-param">dims</em>, <em class="sig-param">ier</em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_get_dimensions_f" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">subroutine</span>&#160; </em><code class="sig-name descname"><span class="pre">cgio_get_dimensions_f</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">cgio_num</span></em>, <em class="sig-param"><span class="pre">id</span></em>, <em class="sig-param"><span class="pre">ndims</span></em>, <em class="sig-param"><span class="pre">dims</span></em>, <em class="sig-param"><span class="pre">ier</span></em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_get_dimensions_f" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd>
@@ -474,14 +472,14 @@ The function returns 0 for success, else an error code.</p>
 <dt class="field-odd">C Signature</dt>
 <dd class="field-odd"><dl class="c function">
 <dt id="c.cgio_set_dimensions">
-int <code class="sig-name descname">cgio_set_dimensions</code><span class="sig-paren">(</span>int <em>cgio_num</em>, double <em>id</em>, <em class="property">const</em> char *<em>data_type</em>, int <em>ndims</em>, <em class="property">const</em> cgsize_t *<em>dims</em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_set_dimensions" title="Permalink to this definition">¶</a><br /></dt>
+<span class="pre">int</span> <code class="sig-name descname"><span class="pre">cgio_set_dimensions</span></code><span class="sig-paren">(</span><span class="pre">int</span> <em><span class="pre">cgio_num</span></em>, <span class="pre">double</span> <em><span class="pre">id</span></em>, <em class="property"><span class="pre">const</span></em> <span class="pre">char</span> <span class="pre">*</span><em><span class="pre">data_type</span></em>, <span class="pre">int</span> <em><span class="pre">ndims</span></em>, <em class="property"><span class="pre">const</span></em> <span class="pre">cgsize_t</span> <span class="pre">*</span><em><span class="pre">dims</span></em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_set_dimensions" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </dd>
 <dt class="field-even">Fortran Signature</dt>
 <dd class="field-even"><dl class="subroutine">
 <dt id="f/_/cgio_set_dimensions_f">
-<em class="property">subroutine  </em><code class="sig-name descname">cgio_set_dimensions_f</code><span class="sig-paren">(</span><em class="sig-param">cgio_num</em>, <em class="sig-param">id</em>, <em class="sig-param">data_type</em>, <em class="sig-param">ndims</em>, <em class="sig-param">dims</em>, <em class="sig-param">ier</em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_set_dimensions_f" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">subroutine</span>&#160; </em><code class="sig-name descname"><span class="pre">cgio_set_dimensions_f</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">cgio_num</span></em>, <em class="sig-param"><span class="pre">id</span></em>, <em class="sig-param"><span class="pre">data_type</span></em>, <em class="sig-param"><span class="pre">ndims</span></em>, <em class="sig-param"><span class="pre">dims</span></em>, <em class="sig-param"><span class="pre">ier</span></em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_set_dimensions_f" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd>

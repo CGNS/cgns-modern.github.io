@@ -4,7 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <!-- Licensed under the Apache 2.0 License -->
   <link rel="stylesheet" type="text/css" href="../../_static/fonts/open-sans/stylesheet.css" />
@@ -15,16 +15,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
     <title>Data I/O Routines &#8212; CGNS Official Web Site</title>
-    <link rel="stylesheet" href="../../_static/guzzle.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/guzzle.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/filemap.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/math_override.css" />
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/language_data.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="shortcut icon" href="../../_static/CGNS_empty.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -122,14 +120,14 @@
 <dt class="field-odd">C Signature</dt>
 <dd class="field-odd"><dl class="c function">
 <dt id="c.cgio_read_data_type">
-int <code class="sig-name descname">cgio_read_data_type</code><span class="sig-paren">(</span>int <em>cgio_num</em>, double <em>id</em>, <em class="property">const</em> cgsize_t *<em>s_start</em>, <em class="property">const</em> cgsize_t *<em>s_end</em>, <em class="property">const</em> cgsize_t *<em>s_stride</em>, <em class="property">const</em> char *<em>m_data_type</em>, int <em>m_num_dims</em>, <em class="property">const</em> cgsize_t *<em>m_dims</em>, <em class="property">const</em> cgsize_t *<em>m_start</em>, <em class="property">const</em> cgsize_t *<em>m_end</em>, <em class="property">const</em> cgsize_t *<em>m_stride</em>, void *<em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_read_data_type" title="Permalink to this definition">¶</a><br /></dt>
+<span class="pre">int</span> <code class="sig-name descname"><span class="pre">cgio_read_data_type</span></code><span class="sig-paren">(</span><span class="pre">int</span> <em><span class="pre">cgio_num</span></em>, <span class="pre">double</span> <em><span class="pre">id</span></em>, <em class="property"><span class="pre">const</span></em> <span class="pre">cgsize_t</span> <span class="pre">*</span><em><span class="pre">s_start</span></em>, <em class="property"><span class="pre">const</span></em> <span class="pre">cgsize_t</span> <span class="pre">*</span><em><span class="pre">s_end</span></em>, <em class="property"><span class="pre">const</span></em> <span class="pre">cgsize_t</span> <span class="pre">*</span><em><span class="pre">s_stride</span></em>, <em class="property"><span class="pre">const</span></em> <span class="pre">char</span> <span class="pre">*</span><em><span class="pre">m_data_type</span></em>, <span class="pre">int</span> <em><span class="pre">m_num_dims</span></em>, <em class="property"><span class="pre">const</span></em> <span class="pre">cgsize_t</span> <span class="pre">*</span><em><span class="pre">m_dims</span></em>, <em class="property"><span class="pre">const</span></em> <span class="pre">cgsize_t</span> <span class="pre">*</span><em><span class="pre">m_start</span></em>, <em class="property"><span class="pre">const</span></em> <span class="pre">cgsize_t</span> <span class="pre">*</span><em><span class="pre">m_end</span></em>, <em class="property"><span class="pre">const</span></em> <span class="pre">cgsize_t</span> <span class="pre">*</span><em><span class="pre">m_stride</span></em>, <span class="pre">void</span> <span class="pre">*</span><em><span class="pre">data</span></em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_read_data_type" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </dd>
 <dt class="field-even">Fortran Signature</dt>
 <dd class="field-even"><dl class="subroutine">
 <dt id="f/_/cgio_read_data_type_f">
-<em class="property">subroutine  </em><code class="sig-name descname">cgio_read_data_type_f</code><span class="sig-paren">(</span><em class="sig-param">cgio_num</em>, <em class="sig-param">id</em>, <em class="sig-param">s_start</em>, <em class="sig-param">s_end</em>, <em class="sig-param">s_stride</em>, <em class="sig-param">m_data_type</em>, <em class="sig-param">m_num_dims</em>, <em class="sig-param">m_dims</em>, <em class="sig-param">m_start</em>, <em class="sig-param">m_end</em>, <em class="sig-param">m_stride</em>, <em class="sig-param">data</em>, <em class="sig-param">ier</em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_read_data_type_f" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">subroutine</span>&#160; </em><code class="sig-name descname"><span class="pre">cgio_read_data_type_f</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">cgio_num</span></em>, <em class="sig-param"><span class="pre">id</span></em>, <em class="sig-param"><span class="pre">s_start</span></em>, <em class="sig-param"><span class="pre">s_end</span></em>, <em class="sig-param"><span class="pre">s_stride</span></em>, <em class="sig-param"><span class="pre">m_data_type</span></em>, <em class="sig-param"><span class="pre">m_num_dims</span></em>, <em class="sig-param"><span class="pre">m_dims</span></em>, <em class="sig-param"><span class="pre">m_start</span></em>, <em class="sig-param"><span class="pre">m_end</span></em>, <em class="sig-param"><span class="pre">m_stride</span></em>, <em class="sig-param"><span class="pre">data</span></em>, <em class="sig-param"><span class="pre">ier</span></em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_read_data_type_f" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd>
@@ -203,14 +201,14 @@ It would be easy for a C program to use the default array ordering (last dimensi
 <dt class="field-odd">C Signature</dt>
 <dd class="field-odd"><dl class="c function">
 <dt id="c.cgio_read_all_data_type">
-int <code class="sig-name descname">cgio_read_all_data_type</code><span class="sig-paren">(</span>int <em>cgio_num</em>, double <em>id</em>, <em class="property">const</em> char *<em>m_data_type</em>, void *<em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_read_all_data_type" title="Permalink to this definition">¶</a><br /></dt>
+<span class="pre">int</span> <code class="sig-name descname"><span class="pre">cgio_read_all_data_type</span></code><span class="sig-paren">(</span><span class="pre">int</span> <em><span class="pre">cgio_num</span></em>, <span class="pre">double</span> <em><span class="pre">id</span></em>, <em class="property"><span class="pre">const</span></em> <span class="pre">char</span> <span class="pre">*</span><em><span class="pre">m_data_type</span></em>, <span class="pre">void</span> <span class="pre">*</span><em><span class="pre">data</span></em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_read_all_data_type" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </dd>
 <dt class="field-even">Fortran Signature</dt>
 <dd class="field-even"><dl class="subroutine">
 <dt id="f/_/cgio_read_all_data_type_f">
-<em class="property">subroutine  </em><code class="sig-name descname">cgio_read_all_data_type_f</code><span class="sig-paren">(</span><em class="sig-param">cgio_num</em>, <em class="sig-param">id</em>, <em class="sig-param">m_data_type</em>, <em class="sig-param">data</em>, <em class="sig-param">ier</em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_read_all_data_type_f" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">subroutine</span>&#160; </em><code class="sig-name descname"><span class="pre">cgio_read_all_data_type_f</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">cgio_num</span></em>, <em class="sig-param"><span class="pre">id</span></em>, <em class="sig-param"><span class="pre">m_data_type</span></em>, <em class="sig-param"><span class="pre">data</span></em>, <em class="sig-param"><span class="pre">ier</span></em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_read_all_data_type_f" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd>
@@ -253,14 +251,14 @@ int <code class="sig-name descname">cgio_read_all_data_type</code><span class="s
 <dt class="field-odd">C Signature</dt>
 <dd class="field-odd"><dl class="c function">
 <dt id="c.cgio_read_block_data_type">
-int <code class="sig-name descname">cgio_read_block_data_type</code><span class="sig-paren">(</span>int <em>cgio_num</em>, double <em>id</em>, cgsize_t <em>b_start</em>, cgsize_t <em>b_end</em>, <em class="property">const</em> char *<em>m_data_type</em>, void *<em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_read_block_data_type" title="Permalink to this definition">¶</a><br /></dt>
+<span class="pre">int</span> <code class="sig-name descname"><span class="pre">cgio_read_block_data_type</span></code><span class="sig-paren">(</span><span class="pre">int</span> <em><span class="pre">cgio_num</span></em>, <span class="pre">double</span> <em><span class="pre">id</span></em>, <span class="pre">cgsize_t</span> <em><span class="pre">b_start</span></em>, <span class="pre">cgsize_t</span> <em><span class="pre">b_end</span></em>, <em class="property"><span class="pre">const</span></em> <span class="pre">char</span> <span class="pre">*</span><em><span class="pre">m_data_type</span></em>, <span class="pre">void</span> <span class="pre">*</span><em><span class="pre">data</span></em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_read_block_data_type" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </dd>
 <dt class="field-even">Fortran Signature</dt>
 <dd class="field-even"><dl class="subroutine">
 <dt id="f/_/cgio_read_block_data_type_f">
-<em class="property">subroutine  </em><code class="sig-name descname">cgio_read_block_data_type_f</code><span class="sig-paren">(</span><em class="sig-param">cgio_num</em>, <em class="sig-param">id</em>, <em class="sig-param">b_start</em>, <em class="sig-param">b_end</em>, <em class="sig-param">m_data_type</em>, <em class="sig-param">data</em>, <em class="sig-param">ier</em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_read_block_data_type_f" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">subroutine</span>&#160; </em><code class="sig-name descname"><span class="pre">cgio_read_block_data_type_f</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">cgio_num</span></em>, <em class="sig-param"><span class="pre">id</span></em>, <em class="sig-param"><span class="pre">b_start</span></em>, <em class="sig-param"><span class="pre">b_end</span></em>, <em class="sig-param"><span class="pre">m_data_type</span></em>, <em class="sig-param"><span class="pre">data</span></em>, <em class="sig-param"><span class="pre">ier</span></em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_read_block_data_type_f" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd>
@@ -311,14 +309,14 @@ Note: Fortran indexing order for multi-dimensional data is used when computing t
 <dt class="field-odd">C Signature</dt>
 <dd class="field-odd"><dl class="c function">
 <dt id="c.cgio_write_data">
-int <code class="sig-name descname">cgio_write_data</code><span class="sig-paren">(</span>int <em>cgio_num</em>, double <em>id</em>, <em class="property">const</em> cgsize_t *<em>s_start</em>, <em class="property">const</em> cgsize_t *<em>s_end</em>, <em class="property">const</em> cgsize_t *<em>s_stride</em>, int <em>m_num_dims</em>, <em class="property">const</em> cgsize_t *<em>m_dims</em>, <em class="property">const</em> cgsize_t *<em>m_start</em>, <em class="property">const</em> cgsize_t *<em>m_end</em>, <em class="property">const</em> cgsize_t *<em>m_stride</em>, void *<em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_write_data" title="Permalink to this definition">¶</a><br /></dt>
+<span class="pre">int</span> <code class="sig-name descname"><span class="pre">cgio_write_data</span></code><span class="sig-paren">(</span><span class="pre">int</span> <em><span class="pre">cgio_num</span></em>, <span class="pre">double</span> <em><span class="pre">id</span></em>, <em class="property"><span class="pre">const</span></em> <span class="pre">cgsize_t</span> <span class="pre">*</span><em><span class="pre">s_start</span></em>, <em class="property"><span class="pre">const</span></em> <span class="pre">cgsize_t</span> <span class="pre">*</span><em><span class="pre">s_end</span></em>, <em class="property"><span class="pre">const</span></em> <span class="pre">cgsize_t</span> <span class="pre">*</span><em><span class="pre">s_stride</span></em>, <span class="pre">int</span> <em><span class="pre">m_num_dims</span></em>, <em class="property"><span class="pre">const</span></em> <span class="pre">cgsize_t</span> <span class="pre">*</span><em><span class="pre">m_dims</span></em>, <em class="property"><span class="pre">const</span></em> <span class="pre">cgsize_t</span> <span class="pre">*</span><em><span class="pre">m_start</span></em>, <em class="property"><span class="pre">const</span></em> <span class="pre">cgsize_t</span> <span class="pre">*</span><em><span class="pre">m_end</span></em>, <em class="property"><span class="pre">const</span></em> <span class="pre">cgsize_t</span> <span class="pre">*</span><em><span class="pre">m_stride</span></em>, <span class="pre">void</span> <span class="pre">*</span><em><span class="pre">data</span></em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_write_data" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </dd>
 <dt class="field-even">Fortran Signature</dt>
 <dd class="field-even"><dl class="subroutine">
 <dt id="f/_/cgio_write_data_f">
-<em class="property">subroutine  </em><code class="sig-name descname">cgio_write_data_f</code><span class="sig-paren">(</span><em class="sig-param">cgio_num</em>, <em class="sig-param">id</em>, <em class="sig-param">s_start</em>, <em class="sig-param">s_end</em>, <em class="sig-param">s_stride</em>, <em class="sig-param">m_num_dims</em>, <em class="sig-param">m_dims</em>, <em class="sig-param">m_start</em>, <em class="sig-param">m_end</em>, <em class="sig-param">m_stride</em>, <em class="sig-param">data</em>, <em class="sig-param">ier</em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_write_data_f" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">subroutine</span>&#160; </em><code class="sig-name descname"><span class="pre">cgio_write_data_f</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">cgio_num</span></em>, <em class="sig-param"><span class="pre">id</span></em>, <em class="sig-param"><span class="pre">s_start</span></em>, <em class="sig-param"><span class="pre">s_end</span></em>, <em class="sig-param"><span class="pre">s_stride</span></em>, <em class="sig-param"><span class="pre">m_num_dims</span></em>, <em class="sig-param"><span class="pre">m_dims</span></em>, <em class="sig-param"><span class="pre">m_start</span></em>, <em class="sig-param"><span class="pre">m_end</span></em>, <em class="sig-param"><span class="pre">m_stride</span></em>, <em class="sig-param"><span class="pre">data</span></em>, <em class="sig-param"><span class="pre">ier</span></em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_write_data_f" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd>
@@ -382,14 +380,14 @@ int <code class="sig-name descname">cgio_write_data</code><span class="sig-paren
 <dt class="field-odd">C Signature</dt>
 <dd class="field-odd"><dl class="c function">
 <dt id="c.cgio_write_data_type">
-int <code class="sig-name descname">cgio_write_data_type</code><span class="sig-paren">(</span>int <em>cgio_num</em>, double <em>id</em>, <em class="property">const</em> cgsize_t *<em>s_start</em>, <em class="property">const</em> cgsize_t *<em>s_end</em>, <em class="property">const</em> cgsize_t *<em>s_stride</em>, <em class="property">const</em> char *<em>m_data_type</em>, int <em>m_num_dims</em>, <em class="property">const</em> cgsize_t *<em>m_dims</em>, <em class="property">const</em> cgsize_t *<em>m_start</em>, <em class="property">const</em> cgsize_t *<em>m_end</em>, <em class="property">const</em> cgsize_t *<em>m_stride</em>, void *<em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_write_data_type" title="Permalink to this definition">¶</a><br /></dt>
+<span class="pre">int</span> <code class="sig-name descname"><span class="pre">cgio_write_data_type</span></code><span class="sig-paren">(</span><span class="pre">int</span> <em><span class="pre">cgio_num</span></em>, <span class="pre">double</span> <em><span class="pre">id</span></em>, <em class="property"><span class="pre">const</span></em> <span class="pre">cgsize_t</span> <span class="pre">*</span><em><span class="pre">s_start</span></em>, <em class="property"><span class="pre">const</span></em> <span class="pre">cgsize_t</span> <span class="pre">*</span><em><span class="pre">s_end</span></em>, <em class="property"><span class="pre">const</span></em> <span class="pre">cgsize_t</span> <span class="pre">*</span><em><span class="pre">s_stride</span></em>, <em class="property"><span class="pre">const</span></em> <span class="pre">char</span> <span class="pre">*</span><em><span class="pre">m_data_type</span></em>, <span class="pre">int</span> <em><span class="pre">m_num_dims</span></em>, <em class="property"><span class="pre">const</span></em> <span class="pre">cgsize_t</span> <span class="pre">*</span><em><span class="pre">m_dims</span></em>, <em class="property"><span class="pre">const</span></em> <span class="pre">cgsize_t</span> <span class="pre">*</span><em><span class="pre">m_start</span></em>, <em class="property"><span class="pre">const</span></em> <span class="pre">cgsize_t</span> <span class="pre">*</span><em><span class="pre">m_end</span></em>, <em class="property"><span class="pre">const</span></em> <span class="pre">cgsize_t</span> <span class="pre">*</span><em><span class="pre">m_stride</span></em>, <span class="pre">void</span> <span class="pre">*</span><em><span class="pre">data</span></em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_write_data_type" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </dd>
 <dt class="field-even">Fortran Signature</dt>
 <dd class="field-even"><dl class="subroutine">
 <dt id="f/_/cgio_write_data_type_f">
-<em class="property">subroutine  </em><code class="sig-name descname">cgio_write_data_type_f</code><span class="sig-paren">(</span><em class="sig-param">cgio_num</em>, <em class="sig-param">id</em>, <em class="sig-param">s_start</em>, <em class="sig-param">s_end</em>, <em class="sig-param">s_stride</em>, <em class="sig-param">m_data_type</em>, <em class="sig-param">m_num_dims</em>, <em class="sig-param">m_dims</em>, <em class="sig-param">m_start</em>, <em class="sig-param">m_end</em>, <em class="sig-param">m_stride</em>, <em class="sig-param">data</em>, <em class="sig-param">ier</em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_write_data_type_f" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">subroutine</span>&#160; </em><code class="sig-name descname"><span class="pre">cgio_write_data_type_f</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">cgio_num</span></em>, <em class="sig-param"><span class="pre">id</span></em>, <em class="sig-param"><span class="pre">s_start</span></em>, <em class="sig-param"><span class="pre">s_end</span></em>, <em class="sig-param"><span class="pre">s_stride</span></em>, <em class="sig-param"><span class="pre">m_data_type</span></em>, <em class="sig-param"><span class="pre">m_num_dims</span></em>, <em class="sig-param"><span class="pre">m_dims</span></em>, <em class="sig-param"><span class="pre">m_start</span></em>, <em class="sig-param"><span class="pre">m_end</span></em>, <em class="sig-param"><span class="pre">m_stride</span></em>, <em class="sig-param"><span class="pre">data</span></em>, <em class="sig-param"><span class="pre">ier</span></em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_write_data_type_f" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd>
@@ -456,14 +454,14 @@ int <code class="sig-name descname">cgio_write_data_type</code><span class="sig-
 <dt class="field-odd">C Signature</dt>
 <dd class="field-odd"><dl class="c function">
 <dt id="c.cgio_write_all_data">
-int <code class="sig-name descname">cgio_write_all_data</code><span class="sig-paren">(</span>int <em>cgio_num</em>, double <em>id</em>, void *<em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_write_all_data" title="Permalink to this definition">¶</a><br /></dt>
+<span class="pre">int</span> <code class="sig-name descname"><span class="pre">cgio_write_all_data</span></code><span class="sig-paren">(</span><span class="pre">int</span> <em><span class="pre">cgio_num</span></em>, <span class="pre">double</span> <em><span class="pre">id</span></em>, <span class="pre">void</span> <span class="pre">*</span><em><span class="pre">data</span></em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_write_all_data" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </dd>
 <dt class="field-even">Fortran Signature</dt>
 <dd class="field-even"><dl class="subroutine">
 <dt id="f/_/cgio_write_all_data_f">
-<em class="property">subroutine  </em><code class="sig-name descname">cgio_write_all_data_f</code><span class="sig-paren">(</span><em class="sig-param">cgio_num</em>, <em class="sig-param">id</em>, <em class="sig-param">data</em>, <em class="sig-param">ier</em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_write_all_data_f" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">subroutine</span>&#160; </em><code class="sig-name descname"><span class="pre">cgio_write_all_data_f</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">cgio_num</span></em>, <em class="sig-param"><span class="pre">id</span></em>, <em class="sig-param"><span class="pre">data</span></em>, <em class="sig-param"><span class="pre">ier</span></em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_write_all_data_f" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd>
@@ -503,14 +501,14 @@ int <code class="sig-name descname">cgio_write_all_data</code><span class="sig-p
 <dt class="field-odd">C Signature</dt>
 <dd class="field-odd"><dl class="c function">
 <dt id="c.cgio_write_all_data_type">
-int <code class="sig-name descname">cgio_write_all_data_type</code><span class="sig-paren">(</span>int <em>cgio_num</em>, double <em>id</em>, <em class="property">const</em> char *<em>m_data_type</em>, void *<em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_write_all_data_type" title="Permalink to this definition">¶</a><br /></dt>
+<span class="pre">int</span> <code class="sig-name descname"><span class="pre">cgio_write_all_data_type</span></code><span class="sig-paren">(</span><span class="pre">int</span> <em><span class="pre">cgio_num</span></em>, <span class="pre">double</span> <em><span class="pre">id</span></em>, <em class="property"><span class="pre">const</span></em> <span class="pre">char</span> <span class="pre">*</span><em><span class="pre">m_data_type</span></em>, <span class="pre">void</span> <span class="pre">*</span><em><span class="pre">data</span></em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_write_all_data_type" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </dd>
 <dt class="field-even">Fortran Signature</dt>
 <dd class="field-even"><dl class="subroutine">
 <dt id="f/_/cgio_write_all_data_type_f">
-<em class="property">subroutine  </em><code class="sig-name descname">cgio_write_all_data_type_f</code><span class="sig-paren">(</span><em class="sig-param">cgio_num</em>, <em class="sig-param">id</em>, <em class="sig-param">m_data_type</em>, <em class="sig-param">data</em>, <em class="sig-param">ier</em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_write_all_data_type_f" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">subroutine</span>&#160; </em><code class="sig-name descname"><span class="pre">cgio_write_all_data_type_f</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">cgio_num</span></em>, <em class="sig-param"><span class="pre">id</span></em>, <em class="sig-param"><span class="pre">m_data_type</span></em>, <em class="sig-param"><span class="pre">data</span></em>, <em class="sig-param"><span class="pre">ier</span></em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_write_all_data_type_f" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd>
@@ -553,14 +551,14 @@ int <code class="sig-name descname">cgio_write_all_data_type</code><span class="
 <dt class="field-odd">C Signature</dt>
 <dd class="field-odd"><dl class="c function">
 <dt id="c.cgio_write_block_data">
-int <code class="sig-name descname">cgio_write_block_data</code><span class="sig-paren">(</span>int <em>cgio_num</em>, double <em>id</em>, cgsize_t <em>b_start</em>, cgsize_t <em>b_end</em>, void *<em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_write_block_data" title="Permalink to this definition">¶</a><br /></dt>
+<span class="pre">int</span> <code class="sig-name descname"><span class="pre">cgio_write_block_data</span></code><span class="sig-paren">(</span><span class="pre">int</span> <em><span class="pre">cgio_num</span></em>, <span class="pre">double</span> <em><span class="pre">id</span></em>, <span class="pre">cgsize_t</span> <em><span class="pre">b_start</span></em>, <span class="pre">cgsize_t</span> <em><span class="pre">b_end</span></em>, <span class="pre">void</span> <span class="pre">*</span><em><span class="pre">data</span></em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_write_block_data" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </dd>
 <dt class="field-even">Fortran Signature</dt>
 <dd class="field-even"><dl class="subroutine">
 <dt id="f/_/cgio_write_block_data_f">
-<em class="property">subroutine  </em><code class="sig-name descname">cgio_write_block_data_f</code><span class="sig-paren">(</span><em class="sig-param">cgio_num</em>, <em class="sig-param">id</em>, <em class="sig-param">b_start</em>, <em class="sig-param">b_end</em>, <em class="sig-param">data</em>, <em class="sig-param">ier</em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_write_block_data_f" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">subroutine</span>&#160; </em><code class="sig-name descname"><span class="pre">cgio_write_block_data_f</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">cgio_num</span></em>, <em class="sig-param"><span class="pre">id</span></em>, <em class="sig-param"><span class="pre">b_start</span></em>, <em class="sig-param"><span class="pre">b_end</span></em>, <em class="sig-param"><span class="pre">data</span></em>, <em class="sig-param"><span class="pre">ier</span></em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_write_block_data_f" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd>

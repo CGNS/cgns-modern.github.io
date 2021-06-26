@@ -4,7 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <!-- Licensed under the Apache 2.0 License -->
   <link rel="stylesheet" type="text/css" href="../../_static/fonts/open-sans/stylesheet.css" />
@@ -15,16 +15,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
     <title>Database-Level Routines &#8212; CGNS Official Web Site</title>
-    <link rel="stylesheet" href="../../_static/guzzle.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/guzzle.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/filemap.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/math_override.css" />
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/language_data.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="shortcut icon" href="../../_static/CGNS_empty.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -121,14 +119,14 @@
 <dt class="field-odd">C Signature</dt>
 <dd class="field-odd"><dl class="c function">
 <dt id="c.cgio_is_supported">
-int <code class="sig-name descname">cgio_is_supported</code><span class="sig-paren">(</span>int <em>file_type</em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_is_supported" title="Permalink to this definition">¶</a><br /></dt>
+<span class="pre">int</span> <code class="sig-name descname"><span class="pre">cgio_is_supported</span></code><span class="sig-paren">(</span><span class="pre">int</span> <em><span class="pre">file_type</span></em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_is_supported" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </dd>
 <dt class="field-even">Fortran Signature</dt>
 <dd class="field-even"><dl class="subroutine">
 <dt id="f/_/cgio_is_supported_f">
-<em class="property">subroutine  </em><code class="sig-name descname">cgio_is_supported_f</code><span class="sig-paren">(</span><em class="sig-param">file_type</em>, <em class="sig-param">ier</em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_is_supported_f" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">subroutine</span>&#160; </em><code class="sig-name descname"><span class="pre">cgio_is_supported_f</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">file_type</span></em>, <em class="sig-param"><span class="pre">ier</span></em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_is_supported_f" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd>
@@ -160,14 +158,14 @@ int <code class="sig-name descname">cgio_is_supported</code><span class="sig-par
 <dt class="field-odd">C Signature</dt>
 <dd class="field-odd"><dl class="c function">
 <dt id="c.cgio_check_file">
-int <code class="sig-name descname">cgio_check_file</code><span class="sig-paren">(</span><em class="property">const</em> char *<em>filename</em>, int *<em>file_type</em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_check_file" title="Permalink to this definition">¶</a><br /></dt>
+<span class="pre">int</span> <code class="sig-name descname"><span class="pre">cgio_check_file</span></code><span class="sig-paren">(</span><em class="property"><span class="pre">const</span></em> <span class="pre">char</span> <span class="pre">*</span><em><span class="pre">filename</span></em>, <span class="pre">int</span> <span class="pre">*</span><em><span class="pre">file_type</span></em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_check_file" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </dd>
 <dt class="field-even">Fortran Signature</dt>
 <dd class="field-even"><dl class="subroutine">
 <dt id="f/_/cgio_check_file_f">
-<em class="property">subroutine  </em><code class="sig-name descname">cgio_check_file_f</code><span class="sig-paren">(</span><em class="sig-param">filename</em>, <em class="sig-param">file_type</em>, <em class="sig-param">ier</em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_check_file_f" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">subroutine</span>&#160; </em><code class="sig-name descname"><span class="pre">cgio_check_file_f</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">filename</span></em>, <em class="sig-param"><span class="pre">file_type</span></em>, <em class="sig-param"><span class="pre">ier</span></em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_check_file_f" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd>
@@ -204,14 +202,14 @@ int <code class="sig-name descname">cgio_check_file</code><span class="sig-paren
 <dt class="field-odd">C Signature</dt>
 <dd class="field-odd"><dl class="c function">
 <dt id="c.cgio_open_file">
-int <code class="sig-name descname">cgio_open_file</code><span class="sig-paren">(</span><em class="property">const</em> char *<em>filename</em>, int <em>file_mode</em>, int <em>file_type</em>, int *<em>cgio_num</em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_open_file" title="Permalink to this definition">¶</a><br /></dt>
+<span class="pre">int</span> <code class="sig-name descname"><span class="pre">cgio_open_file</span></code><span class="sig-paren">(</span><em class="property"><span class="pre">const</span></em> <span class="pre">char</span> <span class="pre">*</span><em><span class="pre">filename</span></em>, <span class="pre">int</span> <em><span class="pre">file_mode</span></em>, <span class="pre">int</span> <em><span class="pre">file_type</span></em>, <span class="pre">int</span> <span class="pre">*</span><em><span class="pre">cgio_num</span></em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_open_file" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </dd>
 <dt class="field-even">Fortran Signature</dt>
 <dd class="field-even"><dl class="subroutine">
 <dt id="f/_/cgio_open_file_f">
-<em class="property">subroutine  </em><code class="sig-name descname">cgio_open_file_f</code><span class="sig-paren">(</span><em class="sig-param">filename</em>, <em class="sig-param">file_mode</em>, <em class="sig-param">file_type</em>, <em class="sig-param">cgio_num</em>, <em class="sig-param">ier</em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_open_file_f" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">subroutine</span>&#160; </em><code class="sig-name descname"><span class="pre">cgio_open_file_f</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">filename</span></em>, <em class="sig-param"><span class="pre">file_mode</span></em>, <em class="sig-param"><span class="pre">file_type</span></em>, <em class="sig-param"><span class="pre">cgio_num</span></em>, <em class="sig-param"><span class="pre">ier</span></em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_open_file_f" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd>
@@ -260,14 +258,14 @@ int <code class="sig-name descname">cgio_open_file</code><span class="sig-paren"
 <dt class="field-odd">C Signature</dt>
 <dd class="field-odd"><dl class="c function">
 <dt id="c.cgio_close_file">
-int <code class="sig-name descname">cgio_close_file</code><span class="sig-paren">(</span>int <em>cgio_num</em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_close_file" title="Permalink to this definition">¶</a><br /></dt>
+<span class="pre">int</span> <code class="sig-name descname"><span class="pre">cgio_close_file</span></code><span class="sig-paren">(</span><span class="pre">int</span> <em><span class="pre">cgio_num</span></em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_close_file" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </dd>
 <dt class="field-even">Fortran Signature</dt>
 <dd class="field-even"><dl class="subroutine">
 <dt id="f/_/cgio_close_file_f">
-<em class="property">subroutine  </em><code class="sig-name descname">cgio_close_file_f</code><span class="sig-paren">(</span><em class="sig-param">cgio_num</em>, <em class="sig-param">ier</em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_close_file_f" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">subroutine</span>&#160; </em><code class="sig-name descname"><span class="pre">cgio_close_file_f</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">cgio_num</span></em>, <em class="sig-param"><span class="pre">ier</span></em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_close_file_f" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd>
@@ -299,14 +297,14 @@ int <code class="sig-name descname">cgio_close_file</code><span class="sig-paren
 <dt class="field-odd">C Signature</dt>
 <dd class="field-odd"><dl class="c function">
 <dt id="c.cgio_get_file_type">
-int <code class="sig-name descname">cgio_get_file_type</code><span class="sig-paren">(</span>int <em>cgio_num</em>, int *<em>file_type</em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_get_file_type" title="Permalink to this definition">¶</a><br /></dt>
+<span class="pre">int</span> <code class="sig-name descname"><span class="pre">cgio_get_file_type</span></code><span class="sig-paren">(</span><span class="pre">int</span> <em><span class="pre">cgio_num</span></em>, <span class="pre">int</span> <span class="pre">*</span><em><span class="pre">file_type</span></em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_get_file_type" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </dd>
 <dt class="field-even">Fortran Signature</dt>
 <dd class="field-even"><dl class="subroutine">
 <dt id="f/_/cgio_get_file_type_f">
-<em class="property">subroutine  </em><code class="sig-name descname">cgio_get_file_type_f</code><span class="sig-paren">(</span><em class="sig-param">cgio_num</em>, <em class="sig-param">file_type</em>, <em class="sig-param">ier</em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_get_file_type_f" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">subroutine</span>&#160; </em><code class="sig-name descname"><span class="pre">cgio_get_file_type_f</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">cgio_num</span></em>, <em class="sig-param"><span class="pre">file_type</span></em>, <em class="sig-param"><span class="pre">ier</span></em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_get_file_type_f" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd>
@@ -343,14 +341,14 @@ int <code class="sig-name descname">cgio_get_file_type</code><span class="sig-pa
 <dt class="field-odd">C Signature</dt>
 <dd class="field-odd"><dl class="c function">
 <dt id="c.cgio_get_root_id">
-int <code class="sig-name descname">cgio_get_root_id</code><span class="sig-paren">(</span>int <em>cgio_num</em>, double *<em>rootid</em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_get_root_id" title="Permalink to this definition">¶</a><br /></dt>
+<span class="pre">int</span> <code class="sig-name descname"><span class="pre">cgio_get_root_id</span></code><span class="sig-paren">(</span><span class="pre">int</span> <em><span class="pre">cgio_num</span></em>, <span class="pre">double</span> <span class="pre">*</span><em><span class="pre">rootid</span></em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_get_root_id" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </dd>
 <dt class="field-even">Fortran Signature</dt>
 <dd class="field-even"><dl class="subroutine">
 <dt id="f/_/cgio_get_root_id_f">
-<em class="property">subroutine  </em><code class="sig-name descname">cgio_get_root_id_f</code><span class="sig-paren">(</span><em class="sig-param">cgio_num</em>, <em class="sig-param">rootid</em>, <em class="sig-param">ier</em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_get_root_id_f" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">subroutine</span>&#160; </em><code class="sig-name descname"><span class="pre">cgio_get_root_id_f</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">cgio_num</span></em>, <em class="sig-param"><span class="pre">rootid</span></em>, <em class="sig-param"><span class="pre">ier</span></em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_get_root_id_f" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd>

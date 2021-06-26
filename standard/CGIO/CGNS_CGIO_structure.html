@@ -4,7 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <!-- Licensed under the Apache 2.0 License -->
   <link rel="stylesheet" type="text/css" href="../../_static/fonts/open-sans/stylesheet.css" />
@@ -15,16 +15,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
     <title>Data Structure Management Routines &#8212; CGNS Official Web Site</title>
-    <link rel="stylesheet" href="../../_static/guzzle.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/guzzle.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/filemap.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/math_override.css" />
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/language_data.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="shortcut icon" href="../../_static/CGNS_empty.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -121,14 +119,14 @@
 <dt class="field-odd">C Signature</dt>
 <dd class="field-odd"><dl class="c function">
 <dt id="c.cgio_create_node">
-int <code class="sig-name descname">cgio_create_node</code><span class="sig-paren">(</span>int <em>cgio_num</em>, double <em>pid</em>, <em class="property">const</em> char *<em>name</em>, double *<em>id</em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_create_node" title="Permalink to this definition">¶</a><br /></dt>
+<span class="pre">int</span> <code class="sig-name descname"><span class="pre">cgio_create_node</span></code><span class="sig-paren">(</span><span class="pre">int</span> <em><span class="pre">cgio_num</span></em>, <span class="pre">double</span> <em><span class="pre">pid</span></em>, <em class="property"><span class="pre">const</span></em> <span class="pre">char</span> <span class="pre">*</span><em><span class="pre">name</span></em>, <span class="pre">double</span> <span class="pre">*</span><em><span class="pre">id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_create_node" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </dd>
 <dt class="field-even">Fortran Signature</dt>
 <dd class="field-even"><dl class="subroutine">
 <dt id="f/_/cgio_create_node_f">
-<em class="property">subroutine  </em><code class="sig-name descname">cgio_create_node_f</code><span class="sig-paren">(</span><em class="sig-param">cgio_num</em>, <em class="sig-param">double pid</em>, <em class="sig-param">name</em>, <em class="sig-param">id</em>, <em class="sig-param">ier</em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_create_node_f" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">subroutine</span>&#160; </em><code class="sig-name descname"><span class="pre">cgio_create_node_f</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">cgio_num</span></em>, <em class="sig-param"><span class="pre">double</span> <span class="pre">pid</span></em>, <em class="sig-param"><span class="pre">name</span></em>, <em class="sig-param"><span class="pre">id</span></em>, <em class="sig-param"><span class="pre">ier</span></em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_create_node_f" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd>
@@ -171,14 +169,14 @@ int <code class="sig-name descname">cgio_create_node</code><span class="sig-pare
 <dt class="field-odd">C Signature</dt>
 <dd class="field-odd"><dl class="c function">
 <dt id="c.cgio_new_node">
-int <code class="sig-name descname">cgio_new_node</code><span class="sig-paren">(</span>int <em>cgio_num</em>, double <em>pid</em>, <em class="property">const</em> char *<em>name</em>, <em class="property">const</em> char *<em>label</em>, <em class="property">const</em> char *<em>data_type</em>, int <em>ndims</em>, <em class="property">const</em> cgsize_t *<em>dims</em>, <em class="property">const</em> void *<em>data</em>, double *<em>id</em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_new_node" title="Permalink to this definition">¶</a><br /></dt>
+<span class="pre">int</span> <code class="sig-name descname"><span class="pre">cgio_new_node</span></code><span class="sig-paren">(</span><span class="pre">int</span> <em><span class="pre">cgio_num</span></em>, <span class="pre">double</span> <em><span class="pre">pid</span></em>, <em class="property"><span class="pre">const</span></em> <span class="pre">char</span> <span class="pre">*</span><em><span class="pre">name</span></em>, <em class="property"><span class="pre">const</span></em> <span class="pre">char</span> <span class="pre">*</span><em><span class="pre">label</span></em>, <em class="property"><span class="pre">const</span></em> <span class="pre">char</span> <span class="pre">*</span><em><span class="pre">data_type</span></em>, <span class="pre">int</span> <em><span class="pre">ndims</span></em>, <em class="property"><span class="pre">const</span></em> <span class="pre">cgsize_t</span> <span class="pre">*</span><em><span class="pre">dims</span></em>, <em class="property"><span class="pre">const</span></em> <span class="pre">void</span> <span class="pre">*</span><em><span class="pre">data</span></em>, <span class="pre">double</span> <span class="pre">*</span><em><span class="pre">id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_new_node" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </dd>
 <dt class="field-even">Fortran Signature</dt>
 <dd class="field-even"><dl class="subroutine">
 <dt id="f/_/cgio_new_node_f">
-<em class="property">subroutine  </em><code class="sig-name descname">cgio_new_node_f</code><span class="sig-paren">(</span><em class="sig-param">cgio_num</em>, <em class="sig-param">pid</em>, <em class="sig-param">name</em>, <em class="sig-param">label</em>, <em class="sig-param">data_type</em>, <em class="sig-param">ndims</em>, <em class="sig-param">dims</em>, <em class="sig-param">data</em>, <em class="sig-param">id</em>, <em class="sig-param">ier</em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_new_node_f" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">subroutine</span>&#160; </em><code class="sig-name descname"><span class="pre">cgio_new_node_f</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">cgio_num</span></em>, <em class="sig-param"><span class="pre">pid</span></em>, <em class="sig-param"><span class="pre">name</span></em>, <em class="sig-param"><span class="pre">label</span></em>, <em class="sig-param"><span class="pre">data_type</span></em>, <em class="sig-param"><span class="pre">ndims</span></em>, <em class="sig-param"><span class="pre">dims</span></em>, <em class="sig-param"><span class="pre">data</span></em>, <em class="sig-param"><span class="pre">id</span></em>, <em class="sig-param"><span class="pre">ier</span></em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_new_node_f" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd>
@@ -257,14 +255,14 @@ int <code class="sig-name descname">cgio_new_node</code><span class="sig-paren">
 <dt class="field-odd">C Signature</dt>
 <dd class="field-odd"><dl class="c function">
 <dt id="c.cgio_delete_node">
-int <code class="sig-name descname">cgio_delete_node</code><span class="sig-paren">(</span>int <em>cgio_num</em>, double <em>pid</em>, double <em>id</em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_delete_node" title="Permalink to this definition">¶</a><br /></dt>
+<span class="pre">int</span> <code class="sig-name descname"><span class="pre">cgio_delete_node</span></code><span class="sig-paren">(</span><span class="pre">int</span> <em><span class="pre">cgio_num</span></em>, <span class="pre">double</span> <em><span class="pre">pid</span></em>, <span class="pre">double</span> <em><span class="pre">id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_delete_node" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </dd>
 <dt class="field-even">Fortran Signature</dt>
 <dd class="field-even"><dl class="subroutine">
 <dt id="f/_/cgio_delete_node_f">
-<em class="property">subroutine  </em><code class="sig-name descname">cgio_delete_node_f</code><span class="sig-paren">(</span><em class="sig-param">cgio_num</em>, <em class="sig-param">pid</em>, <em class="sig-param">id</em>, <em class="sig-param">ier</em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_delete_node_f" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">subroutine</span>&#160; </em><code class="sig-name descname"><span class="pre">cgio_delete_node_f</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">cgio_num</span></em>, <em class="sig-param"><span class="pre">pid</span></em>, <em class="sig-param"><span class="pre">id</span></em>, <em class="sig-param"><span class="pre">ier</span></em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_delete_node_f" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd>
@@ -304,14 +302,14 @@ int <code class="sig-name descname">cgio_delete_node</code><span class="sig-pare
 <dt class="field-odd">C Signature</dt>
 <dd class="field-odd"><dl class="c function">
 <dt id="c.cgio_move_node">
-int <code class="sig-name descname">cgio_move_node</code><span class="sig-paren">(</span>int <em>cgio_num</em>, double <em>pid</em>, double <em>id</em>, double <em>new_pid</em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_move_node" title="Permalink to this definition">¶</a><br /></dt>
+<span class="pre">int</span> <code class="sig-name descname"><span class="pre">cgio_move_node</span></code><span class="sig-paren">(</span><span class="pre">int</span> <em><span class="pre">cgio_num</span></em>, <span class="pre">double</span> <em><span class="pre">pid</span></em>, <span class="pre">double</span> <em><span class="pre">id</span></em>, <span class="pre">double</span> <em><span class="pre">new_pid</span></em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_move_node" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </dd>
 <dt class="field-even">Fortran Signature</dt>
 <dd class="field-even"><dl class="subroutine">
 <dt id="f/_/cgio_move_node_f">
-<em class="property">subroutine  </em><code class="sig-name descname">cgio_move_node_f</code><span class="sig-paren">(</span><em class="sig-param">cgio_num</em>, <em class="sig-param">pid</em>, <em class="sig-param">id</em>, <em class="sig-param">new_pid</em>, <em class="sig-param">ier</em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_move_node_f" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">subroutine</span>&#160; </em><code class="sig-name descname"><span class="pre">cgio_move_node_f</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">cgio_num</span></em>, <em class="sig-param"><span class="pre">pid</span></em>, <em class="sig-param"><span class="pre">id</span></em>, <em class="sig-param"><span class="pre">new_pid</span></em>, <em class="sig-param"><span class="pre">ier</span></em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_move_node_f" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd>
@@ -354,14 +352,14 @@ int <code class="sig-name descname">cgio_move_node</code><span class="sig-paren"
 <dt class="field-odd">C Signature</dt>
 <dd class="field-odd"><dl class="c function">
 <dt id="c.cgio_number_children">
-int <code class="sig-name descname">cgio_number_children</code><span class="sig-paren">(</span>int <em>cgio_num</em>, double <em>id</em>, int *<em>num_child</em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_number_children" title="Permalink to this definition">¶</a><br /></dt>
+<span class="pre">int</span> <code class="sig-name descname"><span class="pre">cgio_number_children</span></code><span class="sig-paren">(</span><span class="pre">int</span> <em><span class="pre">cgio_num</span></em>, <span class="pre">double</span> <em><span class="pre">id</span></em>, <span class="pre">int</span> <span class="pre">*</span><em><span class="pre">num_child</span></em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_number_children" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </dd>
 <dt class="field-even">Fortran Signature</dt>
 <dd class="field-even"><dl class="subroutine">
 <dt id="f/_/cgio_number_children_f">
-<em class="property">subroutine  </em><code class="sig-name descname">cgio_number_children_f</code><span class="sig-paren">(</span><em class="sig-param">cgio_num</em>, <em class="sig-param">id</em>, <em class="sig-param">num_child</em>, <em class="sig-param">ier</em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_number_children_f" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">subroutine</span>&#160; </em><code class="sig-name descname"><span class="pre">cgio_number_children_f</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">cgio_num</span></em>, <em class="sig-param"><span class="pre">id</span></em>, <em class="sig-param"><span class="pre">num_child</span></em>, <em class="sig-param"><span class="pre">ier</span></em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_number_children_f" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd>
@@ -401,14 +399,14 @@ int <code class="sig-name descname">cgio_number_children</code><span class="sig-
 <dt class="field-odd">C Signature</dt>
 <dd class="field-odd"><dl class="c function">
 <dt id="c.cgio_children_names">
-int <code class="sig-name descname">cgio_children_names</code><span class="sig-paren">(</span>int <em>cgio_num</em>, double <em>id</em>, int <em>start</em>, int <em>max_ret</em>, int <em>name_len</em>, int *<em>num_ret</em>, char *<em>child_names</em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_children_names" title="Permalink to this definition">¶</a><br /></dt>
+<span class="pre">int</span> <code class="sig-name descname"><span class="pre">cgio_children_names</span></code><span class="sig-paren">(</span><span class="pre">int</span> <em><span class="pre">cgio_num</span></em>, <span class="pre">double</span> <em><span class="pre">id</span></em>, <span class="pre">int</span> <em><span class="pre">start</span></em>, <span class="pre">int</span> <em><span class="pre">max_ret</span></em>, <span class="pre">int</span> <em><span class="pre">name_len</span></em>, <span class="pre">int</span> <span class="pre">*</span><em><span class="pre">num_ret</span></em>, <span class="pre">char</span> <span class="pre">*</span><em><span class="pre">child_names</span></em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_children_names" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </dd>
 <dt class="field-even">Fortran Signature</dt>
 <dd class="field-even"><dl class="subroutine">
 <dt id="f/_/cgio_children_names_f">
-<em class="property">subroutine  </em><code class="sig-name descname">cgio_children_names_f</code><span class="sig-paren">(</span><em class="sig-param">cgio_num</em>, <em class="sig-param">id</em>, <em class="sig-param">start</em>, <em class="sig-param">max_ret</em>, <em class="sig-param">name_len</em>, <em class="sig-param">num_ret</em>, <em class="sig-param">child_names</em>, <em class="sig-param">ier</em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_children_names_f" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">subroutine</span>&#160; </em><code class="sig-name descname"><span class="pre">cgio_children_names_f</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">cgio_num</span></em>, <em class="sig-param"><span class="pre">id</span></em>, <em class="sig-param"><span class="pre">start</span></em>, <em class="sig-param"><span class="pre">max_ret</span></em>, <em class="sig-param"><span class="pre">name_len</span></em>, <em class="sig-param"><span class="pre">num_ret</span></em>, <em class="sig-param"><span class="pre">child_names</span></em>, <em class="sig-param"><span class="pre">ier</span></em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_children_names_f" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd>
@@ -467,14 +465,14 @@ In C, an additional byte should be added to <code class="code docutils literal n
 <dt class="field-odd">C Signature</dt>
 <dd class="field-odd"><dl class="c function">
 <dt id="c.cgio_children_ids">
-int <code class="sig-name descname">cgio_children_ids</code><span class="sig-paren">(</span>int <em>cgio_num</em>, double <em>id</em>, int <em>start</em>, int <em>max_ret</em>, int *<em>num_ret</em>, char *<em>child_ids</em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_children_ids" title="Permalink to this definition">¶</a><br /></dt>
+<span class="pre">int</span> <code class="sig-name descname"><span class="pre">cgio_children_ids</span></code><span class="sig-paren">(</span><span class="pre">int</span> <em><span class="pre">cgio_num</span></em>, <span class="pre">double</span> <em><span class="pre">id</span></em>, <span class="pre">int</span> <em><span class="pre">start</span></em>, <span class="pre">int</span> <em><span class="pre">max_ret</span></em>, <span class="pre">int</span> <span class="pre">*</span><em><span class="pre">num_ret</span></em>, <span class="pre">char</span> <span class="pre">*</span><em><span class="pre">child_ids</span></em><span class="sig-paren">)</span><a class="headerlink" href="#c.cgio_children_ids" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </dd>
 <dt class="field-even">Fortran Signature</dt>
 <dd class="field-even"><dl class="subroutine">
 <dt id="f/_/cgio_children_ids_f">
-<em class="property">subroutine  </em><code class="sig-name descname">cgio_children_ids_f</code><span class="sig-paren">(</span><em class="sig-param">cgio_num</em>, <em class="sig-param">id</em>, <em class="sig-param">start</em>, <em class="sig-param">max_ret</em>, <em class="sig-param">num_ret</em>, <em class="sig-param">child_ids</em>, <em class="sig-param">ier</em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_children_ids_f" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">subroutine</span>&#160; </em><code class="sig-name descname"><span class="pre">cgio_children_ids_f</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">cgio_num</span></em>, <em class="sig-param"><span class="pre">id</span></em>, <em class="sig-param"><span class="pre">start</span></em>, <em class="sig-param"><span class="pre">max_ret</span></em>, <em class="sig-param"><span class="pre">num_ret</span></em>, <em class="sig-param"><span class="pre">child_ids</span></em>, <em class="sig-param"><span class="pre">ier</span></em><span class="sig-paren">)</span><a class="headerlink" href="#f/_/cgio_children_ids_f" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd>
